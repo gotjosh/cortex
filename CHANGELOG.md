@@ -72,6 +72,14 @@
 * [ENHANCEMENT] Propagate GOPROXY value when building `build-image`. This is to help the builders building the code in a Network where default Go proxy is not accessible (e.g. when behind some corporate VPN). #2741
 * [ENHANCEMENT] Querier: Added metric `cortex_querier_request_duration_seconds` for all requests to the querier. #2708
 * [ENHANCEMENT] Cortex is now built with Go 1.14. #2480 #2749 #2753
+* [ENHANCEMENT] Ruler: Added the following metrics: #2786
+  * `cortex_prometheus_notifications_latency_seconds`
+  * `cortex_prometheus_notifications_errors_total`
+  * `cortex_prometheus_notifications_sent_total`
+  * `cortex_prometheus_notifications_dropped_total`
+  * `cortex_prometheus_notifications_queue_length`
+  * `cortex_prometheus_notifications_queue_capacity`
+  * `cortex_prometheus_notifications_prometheus_notifications_alertmanagers_discovered`
 * [ENHANCEMENT] Experimental TSDB: added the following metrics to the ingester: #2580 #2583 #2589 #2654
   * `cortex_ingester_tsdb_appender_add_duration_seconds`
   * `cortex_ingester_tsdb_appender_commit_duration_seconds`
