@@ -94,7 +94,7 @@
 * [BUGFIX] Use a valid grpc header when logging IP addresses. #3307
 * [BUGFIX] Fixed the metric `cortex_prometheus_rule_group_duration_seconds` in the Ruler, it wouldn't report any values. #3310
 * [BUGFIX] Fixed gRPC connections leaking in rulers when rulers sharding is enabled and APIs called. #3314
-* [BUGFIX] Fixed orgID loading in the ruler api when running without auth. #3343
+* [BUGFIX] Fixed tenant detection in the ruler and alertmanager API when running without auth. #3343
 * [BUGFIX] Fixed shuffle sharding consistency when zone-awareness is enabled and the shard size is increased or instances in a new zone are added. #3299
 * [BUGFIX] Fixed Gossip memberlist members joining when addresses are configured using DNS-based service discovery. #3360
 * [BUGFIX] Ingester: fail to start an ingester running the blocks storage, if unable to load any existing TSDB at startup. #3354
